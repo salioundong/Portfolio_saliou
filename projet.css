@@ -137,14 +137,16 @@ img {
 }
 
 .about-text {
+    text-align: center;
     width: 500px;
 }
 
 .img-section {
+    display: flex;
+    flex-wrap: wrap;
     width: 1020px;
     max-width: 120%;
     margin: 0 auto;
-    display: flex;
     align-items: center;
     justify-content: space-around;
 }
@@ -164,11 +166,14 @@ img {
 }
 
 .about-text p {
+    max-width: 800px;
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 29px;
     font-size: 20px;
-    margin-bottom: 40px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px
 }
 
 .langages {
@@ -319,9 +324,4 @@ footer p:nth-child(1) {
     content: '';
     position: absolute;
     transition: ease .40s;
-}
-
-.about {
-    display: flex;
-    flex-wrap: wrap;
 }
