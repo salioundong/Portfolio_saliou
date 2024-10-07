@@ -73,8 +73,7 @@ nav {
 .about-text {
     text-align: center;
     max-width: 800px; /* Limite la largeur du texte */
-    margin: 20px auto; /* Ajuste la marge */
-    padding: 10px;
+    margin: 20px; /* Ajuste la marge */
 }
 
 /* Media Queries */
@@ -89,10 +88,11 @@ nav {
     }
 
     .about-text {
-        padding: 5px; /* Évitez les débordements */
+        margin: 10px; /* Ajustez la marge */
+        padding: 0 10px; /* Évitez les débordements */
     }
 
-    h1 {
+        h1 {
         font-size: 24px; /* Taille ajustée */
     }
 
@@ -105,16 +105,13 @@ nav {
     }
 
     .about-text h2 {
-        font-size: 24px; /* Taille ajustée */
-    }
-
-    .about-text h4 {
-        font-size: 16px; /* Taille encore réduite si nécessaire */
+        font-size: 30px; /* Taille ajustée */
     }
 
     .about-text p {
-        font-size: 12px; /* Taille ajustée */;
-        margin: 5px 0;
+        font-size: 14px; /* Taille ajustée */
+        line-height: 20px; /* Ajustez la hauteur de ligne */
+        margin: 10px 0; /* Ajustez la marge */
     }
 
     .text-lang p {
@@ -124,7 +121,7 @@ nav {
     }
 
     .title h2 {
-        font-size: 10px; /* Ajustez la taille pour les petits écrans */
+        font-size: 20px; /* Ajustez la taille pour les petits écrans */
     }
 }
 
@@ -217,27 +214,33 @@ h4 {
 
 .about-text h2 {
     color: azure;
-    font-size: 28px; /* Taille ajustée pour les petits écrans */
-    margin-bottom: 15px
+    font-size: 70px;
+    margin-bottom: 25px;
 }
 
 .about-text h4 {
     color: white;
-    font-size: 18px; /* Taille ajustée pour les petits écrans */
-    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
 
 .about-text p {
+    max-width: 800px;
     color: #fcfc;
-    line-height: 20px;
-    font-size: 14px;
-    margin: 0 10px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px
 }
 
 .langages {
     background: black;
     width: 100%;
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 
 .title h2 {
@@ -253,21 +256,22 @@ h4 {
     flex-wrap: wrap; /* Permet d'empiler les icônes sur petits écrans */
     justify-content: center;
     align-items: center;
+    align-items: center;
 }
 
 .icone {
-    height: auto;
-    width: 100px;
-    padding: 10x;
+    height: 350px;
+    width: 350px;
+    padding: 20px 30px;
     background: #191919;
     border-radius: 20px;
     margin: 15px;
+    position: relative;
     text-align: center;
 }
 
 .icone i {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 45px;
     text-align: center;
     color: fuchsia;
     margin: 10px;
