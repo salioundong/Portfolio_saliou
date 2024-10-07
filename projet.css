@@ -128,25 +128,45 @@ h4 {
 .about {
     width: 100%;
     background-color: #191919;
-    padding: 100px 0px;
+    padding: 20px;
 }
 
 img {
-    width: 400px;
+    max-width: 100%;
     height: auto;
+    flex: 1;
 }
 
 .about-text {
-    text-align: center;
-    width: 500px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+@media (max-width: 768px) {
+    .img-section {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
 .img-section {
     display: flex;
     flex-wrap: wrap;
     width: 1020px;
     max-width: 120%;
-    margin: 0 auto;
+    margin: 200px 0;
     align-items: center;
     justify-content: space-around;
 }
@@ -324,14 +344,4 @@ footer p:nth-child(1) {
     content: '';
     position: absolute;
     transition: ease .40s;
-}
-
-h1, h2, h3, h4, h5 {
-    font-size: 2rem;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem; 
-    }
 }
