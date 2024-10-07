@@ -136,8 +136,7 @@ h4 {
 
 
 .about-text {
-    text-align: left;
-    max-width: 800px;
+    max-width: 100px;
     margin: 0 auto;
     padding: 20px;
 }
