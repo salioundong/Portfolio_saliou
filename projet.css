@@ -1,3 +1,13 @@
+body {
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .header {
     height: 100vh;
     width: 100%;
@@ -11,15 +21,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 8%;
-    padding-right: 12%;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    padding: 40px 12%; /* Ajuste le padding pour plus de flexibilité */
 }
 
 .bouton {
@@ -31,6 +33,53 @@ nav {
     border: 2px solid transparent;
     padding: 10px;
     transition: transform .4s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer le contenu */
+    text-align: center; /* Centre le texte */
+}
+
+.about {
+    width: 100%;
+    background-color: #191919;
+    padding: 20px;
+}
+
+.img-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; /* Centre la section */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-section img {
+    max-width: 100%; /* Rendre l'image responsive */
+    height: auto; /* Garder le ratio */
+    flex: 1 1 300px; /* Les images prennent au moins 300px */
+    margin: 10px; /* Espace entre les images */
+}
+
+.about-text {
+    text-align: center;
+    max-width: 800px; /* Limite la largeur du texte */
+    margin: 20px; /* Ajuste la marge */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .img-section {
+        flex-direction: column; /* Empiler les images et le texte */
+    }
+
+    .img-section img {
+        width: 100%; /* Images prennent 100% de la largeur */
+    }
 }
 
 .bouton:hover {
@@ -72,12 +121,6 @@ nav ul li a:hover {
     transition: .4s;
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 7%;
-    transform: translateY(-48%);
-}
 
 h1 {
     color: white;
@@ -123,32 +166,6 @@ h4 {
     box-shadow: 0px 0px 5px black, 0px 0px 15px gray;
     top: 6px;
     right: 6px;
-}
-
-.about {
-    width: 100%;
-    background-color: #191919;
-    padding: 20px;
-}
-
-img {
-    width: 400px;
-    height: auto;
-}
-
-.about-text {
-    text-align: center;
-    width: 500px;
-}
-
-.img-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1020px;
-    max-width: 120%;
-    margin: 200px;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .about-text h2 {
