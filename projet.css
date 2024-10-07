@@ -73,7 +73,8 @@ nav {
 .about-text {
     text-align: center;
     max-width: 800px; /* Limite la largeur du texte */
-    margin: 20px; /* Ajuste la marge */
+    margin: 10px; /* Ajuste la marge */
+    padding: 0 15px;
 }
 
 /* Media Queries */
@@ -93,24 +94,35 @@ nav {
     }
 
     h1 {
-        font-size: 30px; /* Taille ajustée pour les petits écrans */
+        font-size: 24px; /* Taille ajustée */
     }
 
     h3 {
-        font-size: 20px; /* Taille ajustée */
+        font-size: 16px; /* Taille ajustée */
     }
 
     h4 {
-        font-size: 18px; /* Taille ajustée */
+        font-size: 14px; /* Taille ajustée */
+    }
+
+    .about-text h2 {
+        font-size: 30px; /* Taille ajustée */
     }
 
     .about-text p {
-        font-size: 16px; /* Taille ajustée pour le texte */
-        line-height: 24px; /* Ajustez la hauteur de ligne pour le confort de lecture */
+        font-size: 14px; /* Taille ajustée */
+        line-height: 20px; /* Ajustez la hauteur de ligne */
+        margin: 10px 0; /* Ajustez la marge */
+    }
+
+    .text-lang p {
+        font-size: 12px; /* Taille ajustée pour le texte des langages */
+        line-height: 18px; /* Ajustez la hauteur de ligne */
+        margin-bottom: 10px; /* Réduisez l'espace entre les paragraphes */
     }
 
     .title h2 {
-        font-size: 30px; /* Ajustez la taille pour les petits écrans */
+        font-size: 20px; /* Ajustez la taille pour les petits écrans */
     }
 }
 
@@ -229,7 +241,7 @@ h4 {
 .langages {
     background: black;
     width: 100%;
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 .title h2 {
@@ -241,26 +253,25 @@ h4 {
 }
 
 .boxes {
-     display: flex;
+    display: flex;
     flex-wrap: wrap; /* Permet d'empiler les icônes sur petits écrans */
     justify-content: center;
-    align-items: center;
     align-items: center;
 }
 
 .icone {
-    height: 350px;
-    width: 350px;
-    padding: 20px 30px;
+    height: auto;
+    width: 100px;
+    padding: 10x;
     background: #191919;
     border-radius: 20px;
     margin: 15px;
-    position: relative;
     text-align: center;
 }
 
 .icone i {
-    font-size: 45px;
+    font-size: 12px;
+    line-height: 18px;
     text-align: center;
     color: fuchsia;
     margin: 10px;
