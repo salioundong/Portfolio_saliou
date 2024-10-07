@@ -92,36 +92,25 @@ nav {
         padding: 0 10px; /* Évitez les débordements */
     }
 
-        h1 {
-        font-size: 24px; /* Taille ajustée */
+    h1 {
+        font-size: 30px; /* Taille ajustée pour les petits écrans */
     }
 
     h3 {
-        font-size: 16px; /* Taille ajustée */
+        font-size: 20px; /* Taille ajustée */
     }
 
     h4 {
-        font-size: 14px; /* Taille ajustée */
-    }
-
-    .about-text h2 {
-        font-size: 30px; /* Taille ajustée */
+        font-size: 18px; /* Taille ajustée */
     }
 
     .about-text p {
-        font-size: 14px; /* Taille ajustée */
-        line-height: 20px; /* Ajustez la hauteur de ligne */
-        margin: 10px 0; /* Ajustez la marge */
-    }
-
-    .text-lang p {
-        font-size: 12px; /* Taille ajustée pour le texte des langages */
-        line-height: 18px; /* Ajustez la hauteur de ligne */
-        margin-bottom: 10px; /* Réduisez l'espace entre les paragraphes */
+        font-size: 16px; /* Taille ajustée pour le texte */
+        line-height: 24px; /* Ajustez la hauteur de ligne pour le confort de lecture */
     }
 
     .title h2 {
-        font-size: 20px; /* Ajustez la taille pour les petits écrans */
+        font-size: 30px; /* Ajustez la taille pour les petits écrans */
     }
 }
 
@@ -255,7 +244,6 @@ h4 {
     display: flex;
     flex-wrap: wrap; /* Permet d'empiler les icônes sur petits écrans */
     justify-content: center;
-    align-items: center;
     align-items: center;
 }
 
