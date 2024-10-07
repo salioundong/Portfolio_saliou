@@ -38,8 +38,8 @@ nav {
 .content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centrer le contenu */
+    left: 7%;
+    transform: translateY(-50%);
     text-align: left;
 }
 
