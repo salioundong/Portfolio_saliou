@@ -112,15 +112,6 @@ nav {
     .title h2 {
         font-size: 30px; /* Ajustez la taille pour les petits écrans */
     }
-
-    .icone {
-        width: 80%; /* Icônes prennent plus de largeur sur petits écrans */
-    }
-
-    .text-lang p {
-        font-size: 14px; /* Réduisez la taille des textes des langages */
-        line-height: 20px; /* Ajustez la hauteur de ligne */
-    }
 }
 
 
@@ -250,24 +241,26 @@ h4 {
 }
 
 .boxes {
-    display: flex;
+     display: flex;
     flex-wrap: wrap; /* Permet d'empiler les icônes sur petits écrans */
     justify-content: center;
+    align-items: center;
     align-items: center;
 }
 
 .icone {
-    height: auto; /* Permet à la hauteur de s'ajuster automatiquement */
-    width: 100px; /* Largeur réduite pour les petits écrans */
-    padding: 20px;
+    height: 350px;
+    width: 350px;
+    padding: 20px 30px;
     background: #191919;
     border-radius: 20px;
     margin: 15px;
+    position: relative;
     text-align: center;
 }
 
 .icone i {
-    font-size: 30px;
+    font-size: 45px;
     text-align: center;
     color: fuchsia;
     margin: 10px;
