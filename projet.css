@@ -132,7 +132,7 @@ h4 {
 }
 
 img {
-    max-width: 100;
+    width: 400px;
     height: auto;
 }
 
@@ -146,7 +146,7 @@ img {
     flex-wrap: wrap;
     width: 1020px;
     max-width: 120%;
-    margin: 200px 0;
+    margin: 200px;
     align-items: center;
     justify-content: space-around;
 }
