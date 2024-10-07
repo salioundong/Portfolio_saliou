@@ -91,6 +91,36 @@ nav {
         margin: 10px; /* Ajustez la marge */
         padding: 0 10px; /* Évitez les débordements */
     }
+
+    h1 {
+        font-size: 30px; /* Taille ajustée pour les petits écrans */
+    }
+
+    h3 {
+        font-size: 20px; /* Taille ajustée */
+    }
+
+    h4 {
+        font-size: 18px; /* Taille ajustée */
+    }
+
+    .about-text p {
+        font-size: 16px; /* Taille ajustée pour le texte */
+        line-height: 24px; /* Ajustez la hauteur de ligne pour le confort de lecture */
+    }
+
+    .title h2 {
+        font-size: 30px; /* Ajustez la taille pour les petits écrans */
+    }
+
+    .icone {
+        width: 80%; /* Icônes prennent plus de largeur sur petits écrans */
+    }
+
+    .text-lang p {
+        font-size: 14px; /* Réduisez la taille des textes des langages */
+        line-height: 20px; /* Ajustez la hauteur de ligne */
+    }
 }
 
 
@@ -221,24 +251,23 @@ h4 {
 
 .boxes {
     display: flex;
+    flex-wrap: wrap; /* Permet d'empiler les icônes sur petits écrans */
     justify-content: center;
     align-items: center;
-    min-height: auto;
 }
 
 .icone {
-    height: 350px;
-    width: 350px;
-    padding: 20px 30px;
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement */
+    width: 100px; /* Largeur réduite pour les petits écrans */
+    padding: 20px;
     background: #191919;
     border-radius: 20px;
     margin: 15px;
-    position: relative;
     text-align: center;
 }
 
 .icone i {
-    font-size: 45px;
+    font-size: 30px;
     text-align: center;
     color: fuchsia;
     margin: 10px;
