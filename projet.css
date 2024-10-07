@@ -1,10 +1,17 @@
 .header {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
     background-image: url(zale_portfolio.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.mynav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav {
@@ -321,33 +328,3 @@ footer p:nth-child(1) {
     transition: ease .40s;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-.header, .about, .langages, .contact {
-    padding: 20px;
-}
-
-.mynav {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.icone {
-    flex: 1 1 30%; /* trois icônes par ligne */
-    margin: 10px;
-}
-
-@media (max-width: 768px) {
-    .mynav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .icone {
-        flex: 1 1 100%; /* une icône par ligne */
-    }
-}
