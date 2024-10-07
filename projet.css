@@ -8,12 +8,6 @@
     background-position: center;
 }
 
-.mynav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 nav {
     display: flex;
     align-items: center;
