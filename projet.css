@@ -17,8 +17,6 @@ nav {
 }
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
@@ -131,11 +129,13 @@ h4 {
     padding: 20px;
 }
 
-img {
+.img-section img {
     max-width: 100%;
     height: auto;
-    flex: 1;
+    flex: 1 1 100%; 
+    padding: 10px; 
 }
+
 
 .about-text {
     text-align: left;
@@ -161,14 +161,22 @@ img {
         font-size: 1rem;
     }
 }
+
+@media (min-width: 768px) {
+    .img-section img {
+        flex: 1 1 50%; 
+    }
+
+    .about-text {
+        flex: 1 1 50%; 
+    }
+}
+
 .img-section {
     display: flex;
     flex-wrap: wrap;
-    width: 1020px;
-    max-width: 120%;
-    margin: 200px 0;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .about-text h2 {
