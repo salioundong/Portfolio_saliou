@@ -130,42 +130,41 @@ h4 {
 }
 
 .img-section img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Rendre l'image responsive */
+    height: auto; /* Garder le ratio */
+    flex: 1 1 300px; /* Prend au moins 300px sur des écrans larges */
+    margin: 10px; /* Espace entre les images */
 }
 
 
 .about-text {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 800px; /* Limite la largeur du texte */
+    margin: 20px; /* Ajoute une marge autour du texte */
 }
 
 @media (max-width: 768px) {
     .img-section {
-        flex-direction: column;
+        flex-direction: column; /* Empile les éléments sur petits écrans */
+        align-items: center; /* Centre les images */
     }
-    
+
+    .img-section img {
+        flex: 1 1 100%; /* Les images prennent 100% de la largeur */
+        margin: 10px 0; /* Marges verticales uniquement */
+    }
+
     .about-text {
-        text-align: center;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    p {
-        font-size: 1rem;
+        text-align: center; /* Centre le texte sur petits écrans */
+        margin: 0 10px; /* Ajuste la marge pour les petits écrans */
     }
 }
+
 .img-section {
     display: flex;
     flex-wrap: wrap;
-    width: 1020px;
-    max-width: 120%;
-    margin: 200px 0;
-    align-items: center;
+    max-width: 1200px; /* Limite la largeur maximale */
+    margin: 20px auto; /* Centre la section */
+    align-items: flex-start; /* Alignement par défaut */
     justify-content: center;
 }
 
